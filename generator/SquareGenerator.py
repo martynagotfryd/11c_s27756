@@ -1,14 +1,11 @@
-#3 and 5
-class SquareGenerator:
+#3 and 5 and 10
+
+from abc import ABC, abstractmethod
+class SquareGenerator(ABC):
     def __init__(self):
+        super().__init__()
+
+    @abstractmethod
+    def generate_squares(self, start, end):
         pass
 
-    def generate_squares(self, start, end):
-        if end < start:
-            raise Exception("the end of the range is less than the start")
-
-        return [x**2 for x in range(start, end + 1)]
-
-generator = SquareGenerator()
-squares2 = generator.generate_squares(1, 10)
-print(squares2)

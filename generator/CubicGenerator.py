@@ -1,4 +1,4 @@
-# 8
+#8 and 9 and 10
 from generator.SquareGenerator import SquareGenerator
 class CubicGenerator(SquareGenerator):
     def __init__(self):
@@ -16,10 +16,10 @@ class CubicGenerator(SquareGenerator):
 
         return [x**2 for x in range(start, end + 1)]
 
+
 generator = CubicGenerator()
 cubics = generator.generate_cubes(1, 10)
 print(cubics)
 
-generator = SquareGenerator()
 squares2 = generator.generate_squares(1, 10)
 print(squares2)
