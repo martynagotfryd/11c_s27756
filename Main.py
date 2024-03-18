@@ -20,3 +20,4 @@ class SquareGenerator:
 generator = SquareGenerator()
 squares = generator.generate_squares(1, 10)
 print(squares)
+
