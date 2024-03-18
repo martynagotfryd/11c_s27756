@@ -1,5 +1,6 @@
-#2
+import math
 
+#2
 def generate_squares(start, end):
     return [x**2 for x in range(start, end + 1)]
 
@@ -21,3 +22,6 @@ generator = SquareGenerator()
 squares = generator.generate_squares(1, 10)
 print(squares)
 
+#4
+squereRoots = [math.sqrt(x) for x in squares]
+print(squereRoots)
