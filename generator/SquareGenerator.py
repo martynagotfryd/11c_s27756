@@ -10,5 +10,5 @@ class SquareGenerator:
         return [x**2 for x in range(start, end + 1)]
 
 generator = SquareGenerator()
-squares2 = generator.generate_squares(10, 1)
+squares2 = generator.generate_squares(1, 10)
 print(squares2)
